@@ -4,9 +4,12 @@ class Card2 extends Component {
 
     render() {
 
-       return <h1>This is from Class Component </h1>
+       return <div className='card2'>
+           <h3>{this.props.name}</h3>
+       </div>
     }
 
 }
+
 
 export default Card2;
