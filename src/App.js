@@ -1,15 +1,14 @@
 import React from 'react'
 import Card from './components/card'
 import Card2 from './components/class'
+import Data from './data.json'
 
 function App() {
+    
+    
     return <div>
         <h1 className='headingStyle'>Hi</h1>
-        <Card titleText = 'Call Mother' descText = 'Name: Jannatul Fardus'/>
-        <Card titleText = 'Call Father' descText = 'Name: Md. Oliullah Anshari'/>
-        <Card titleText = 'Call Sister' descText = 'Name: Feroza Akhter'/>
-        <Card titleText = 'Call Sister' descText = 'Name: Farzana Akhter'/>
-
+         {Data.map((x) => <Card titleText={x.titleText} descText = {x.titleDesc}/>)}
         <Card2 />
     </div>
 }
