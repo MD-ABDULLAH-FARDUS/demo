@@ -3,10 +3,11 @@ const dateName = date.getDate()
 const monthName = date.getMonth()
 const yearName = date.getFullYear()
 
-function Card() {
+function Card(props) {
+  const {titleText, descText} = props
   return  <div className='card'>
-  <h3 className='cardTitle'>Call Family</h3>
-  <p className='cardDec'>Making a card in react js by watching the tutorial videos of Anisul Islam</p>
+  <h3 className='cardTitle'>{titleText}</h3>
+  <p className='cardDec'>{descText}</p>
   <p className='cardFooter'>{`${dateName}/${monthName}/${yearName}`}</p>
 </div>
 }
