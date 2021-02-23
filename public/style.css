@@ -39,3 +39,11 @@
   width: 190px;
   display: inline-block;
 }
+
+button {
+  padding: .8rem;
+  font-size: 3rem;
+  margin: 15px;
+  box-shadow: 2px 2px 2px #333;
+  background: #eb9ca3e7;
+}
